@@ -1,0 +1,94 @@
+# =========================
+# OS
+# =========================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# =========================
+# VSCode
+# =========================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+.pytest_cache/
+.mypy_cache/
+
+venv/
+.env/
+
+# =========================
+# C / C++
+# =========================
+
+*.o
+*.out
+*.exe
+*.obj
+*.dll
+*.so
+*.a
+
+# CMake
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+
+# =========================
+# Java
+# =========================
+
+*.class
+*.jar
+*.war
+.gradle/
+build/
+out/
+
+# =========================
+# Rust
+# =========================
+
+target/
+Cargo.lock
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+# =========================
+# Temporary files
+# =========================
+
+tmp/
+temp/
+
+# =========================
+# LeetCode
+# =========================
+
+.leetcode/
