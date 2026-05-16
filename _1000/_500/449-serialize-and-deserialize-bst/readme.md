@@ -1,8 +1,7 @@
 # [449. Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/description/)
-Solved
-Medium
-Topics
-premium lock iconCompanies
+- **Solved**
+- **Medium**
+- **Topics:** `String` `Tree` `Depth-First Search` `Breadth-First Search` `Design` `Binary Search Tree` `Binary Tree`
 
 Serialization is converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
 
@@ -11,39 +10,15 @@ Design an algorithm to serialize and deserialize a binary search tree. There is 
 The encoded string should be as compact as possible.
 
  
+#### Example 1:
+> **Input:** root = [2,1,3] <br>
+> **Output:** [2,1,3] <br>
 
-Example 1:
+#### Example 2:
+> **Input:** root = [] <br>
+> **Output:** [] <br>
 
-Input: root = [2,1,3]
-Output: [2,1,3]
-
-Example 2:
-
-Input: root = []
-Output: []
-
- 
-
-Constraints:
-
-    The number of nodes in the tree is in the range [0, 104].
-    0 <= Node.val <= 104
-    The input tree is guaranteed to be a binary search tree.
-
- 
-Seen this question in a real interview before?
-1/6
-Yes
-No
-Accepted
-276 947/464.7K
-Acceptance Rate
-59.6%
-Topics
-String
-Tree
-Depth-First Search
-Breadth-First Search
-Design
-Binary Search Tree
-Binary Tree
+#### Constraints:
+- The number of nodes in the tree is in the range `[0, 10^4]`.
+- `0 <= Node.val <= 10^4`
+- The input tree is guaranteed to be a binary search tree.
