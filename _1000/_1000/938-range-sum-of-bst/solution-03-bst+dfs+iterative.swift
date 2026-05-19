@@ -1,0 +1,55 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     public var val: Int
+ *     public var left: TreeNode?
+ *     public var right: TreeNode?
+ *     public init() { self.val = 0; self.left = nil; self.right = nil; }
+ *     public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+ *     public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
+ *         self.val = val
+ *         self.left = left
+ *         self.right = right
+ *     }
+ * }
+ */
+
+// Approach: BST, DFS, Iterative
+// Time complexity: O(n)
+// Space complexity: O(n)
+class Solution {
+    func rangeSumBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
+        guard let root else {
+            return 0
+        }
+
+        var result = 0
+        var stack = [root]
+
+        while !stack.isEmpty {
+            let node = stack.removeLast()
+            
+            if node.val < low {
+                if let right = node.right {
+                    stack.append(right)
+                }
+            } else if node.val > high {
+                if let left = node.left {
+                    stack.append(left)
+                }
+            } else {
+                result += node.val
+                
+                if let left = node.left {
+                    stack.append(left)
+                }
+
+                if let right = node.right {
+                    stack.append(right)
+                }
+            }
+        }
+
+        return result
+    }
+}
